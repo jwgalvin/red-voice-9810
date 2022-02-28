@@ -1,0 +1,8 @@
+<h1> Herein are secrets to the delight known as <%= @dish.name %>!!!!</h1>
+<ol>
+<% @ingredients.each do |ingredient| %>
+<li> Ingredient: <%= ingredient.name%> </li>
+<%end %>
+</ol>
+<h5> Chef name: <%= @chef.name%> </h5>
+<h6> Chef's flowery description: <%= @dish.description%></h6>

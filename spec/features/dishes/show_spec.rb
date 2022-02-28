@@ -32,4 +32,10 @@ describe "is a show page" do
     expect(page).to_not have_content("Turkey truck")
     expect(page).to_not have_content("NotJoe Galvin")
   end
+
+  it "has a total of calories from the ingredients" do
+    visit("/dishes/#{@dish1.id}")
+
+    expect(page).to have_content("Total calories from dish before being cooked: 200")
+  end
 end

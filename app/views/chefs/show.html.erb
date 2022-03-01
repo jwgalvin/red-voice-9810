@@ -1,0 +1,3 @@
+<h1> Chef <%=@chef.name%>'s page of magical tasty ingredients.</h1>
+
+<h5><%= button_to "#{@chef.name}'s secrets", "/chefs/#{@chef.id}/ingredients", method: :get%> ingredients are a button click away.</h5>

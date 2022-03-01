@@ -7,4 +7,12 @@ class Dish < ApplicationRecord
   def calorie_count
     ingredients.sum('calorie')
   end
+
+  def find_ingredients
+    ingredients
+  end
+
+  def find_chef
+    chef
+  end
 end

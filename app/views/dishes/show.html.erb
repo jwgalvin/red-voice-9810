@@ -1,9 +1,9 @@
 <h1> Herein are secrets to the delight known as <%= @dish.name %>!!!!</h1>
 <ol>
-<% @ingredients.each do |ingredient| %>
+<% @dish.find_ingredients.each do |ingredient| %>
 <li> Ingredient: <%= ingredient.name%> </li>
 <%end %>
 </ol>
-<h5> Chef name: <%= @chef.name%> </h5>
+<h5> Chef name: <%= @dish.find_chef.name%> </h5>
 <h5> Chef's flowery description: <%= @dish.description%></h5>
 <h5> Total calories from dish before being cooked: <%= @dish.calorie_count%></h5>
